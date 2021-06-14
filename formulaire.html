@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mon Premier Formulaire</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Votre Avis Nous Intéresse </h1>
+<table>
+<tr>
+<form>
+	<td>
+	<fieldset>
+		<legend>
+			Informations Personnelles
+		</legend>
+		<ol>
+		 <li>
+		  	<label> Nom</label>
+		    <input type="text" name="" required="">
+		  </li>	
+		 <li>
+		  	<label> Date de naissance</label>
+		    <input type="date" name="" required="">
+		  </li>
+		  <li>
+		  	<label> Site</label>
+		    <input type="Site" name="" placeholder="http://monsite.com" required="">
+		  </li>	
+		  <li>
+		  	<label> Emploi</label>
+		  	<select>
+		  	<option></option>
+		  	<option>Etudiant</option>
+		  	<option>Administrateur Réseau</option>
+		  	<option>Développeur Web</option>
+		  	<option>Web designer</option>
+		  	<option>DevOps</option>
+		  	</select>
+		  </li>	
+		  <li>
+		  	<label> Approx. salaire annuel</label><br>
+		    <input type="number" step="1000" name="" placeholder="$" required="">
+		  </li>	
+		</ol>
+	</fieldset>
+    </td>
+    <td>
+	<fieldset>
+		<legend>
+			Informations de Contact
+		</legend>
+		<ol>
+		  <li>
+		  	<label> Adress ligne 1 </label><br>
+		    <input type="address" name="" required="">
+		  </li>	
+		  <li>
+		  	<label> Adress ligne 2 </label><br>
+		    <input type="address" name="" required="">
+		  </li>	
+		  <li>
+		  	<label> Pays</label>
+		  	<input list="Payslist" type="text" name="Pays">
+		  	<datalist id="Payslist">
+		  	  <option/>
+		  	  <option value="Algérie" />
+		  	  <option value="Tunisie"/>
+		  	  <option value="Maroc" />
+		  	</datalist>
+		  </li>	
+		  <li>
+		  	<label> Tél</label>
+		    <input type="Tel" name="" placeholder="eg: +213 67..." required="">
+		  </li>	
+		  <li>
+		  	<label> courriel</label>
+		    <input type="email" name="" required="">
+		  </li>	
+		</ol>
+	</fieldset>
+	</td>
+</form>
+</tr>
+</table>
+<h1>Préférences</h1>
+<div>
+	<label>choisir une couleur</label>
+    <input type="color" name="choisir une couleur" value="black"><br>
+</div>
+<div>
+	<label>Sur une échelle de 1 à 10, quel est votre degré d'enthousiasme pour HTML5 ?</label>
+<input min="1" max="10" step="1" required="" type="range" name="range"/><br>
+</div>
+<div>
+	<input type="submit" value="Envoyer"/>
+</div>
+</body>
+</html> 
